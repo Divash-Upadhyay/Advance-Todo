@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+
+body{
+  background-color: rgb(4, 4, 32);
+}
+.App{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 28%;
+  margin: auto;
+}
+.input-div{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.input-tag{
+  font-family: 'Wellfleet', cursive;
+  letter-spacing: 1px;
+  width: 80%;
+  border-radius: 6px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.input-div i{
+  border-radius: 6px;
+  background-color: #613DC1;
+  color: white;
+  width: 7%;
+  padding: 9px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.input-div i:hover{
+  color: #613DC1;
+  background-color: white;
+}
+.task-div{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  margin-bottom: 10px;
+  animation-name: comDiv;
+  animation-duration: 1s;
+}
+.task-tag{
+  font-family: 'Wellfleet', cursive;
+  letter-spacing: 1px;
+  width: 80%;
+  border-radius: 6px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #613DC1;
+  color: white;
+  transition: 0.3s;
+}
+.task-tag:hover{
+  background-color: white;
+  color: #613DC1;
+}
+.task-div i{
+  border-radius: 6px;
+  /* background-color: #613DC1; */
+  color: white;
+  width: 8%;
+  padding: 9px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.fa-check{
+  background-color: #41aa43;
+}
+.fa-eraser{
+  background-color: red;
+}
+.fa-check:hover{
+  color: green;
+  background-color: white;
+}
+.fa-eraser:hover{
+  color: red;
+  background-color: white;
+}
+#check{
+  text-decoration: line-through;
+}
+#no-check{
+  text-decoration: none;
+}
+
+.com-div{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  animation-name: comDiv;
+  animation-duration: 1s;
+}
+.com-tag{
+  font-family: 'Wellfleet', cursive;
+  letter-spacing: 1px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #41aa43; 
+  color: white;
+  text-decoration: line-through;
+  transition: 0.3s;
+}
+.com-tag:hover{
+  background-color: white;
+  color: green;
+}
+.showCom-div{
+  background-color: #613DC1;
+  color: white;
+  border-radius: 6px;
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  padding: 5px 0;
+}
+@keyframes comDiv{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
